@@ -37,24 +37,19 @@
 <h2 id="project-files-description"> :floppy_disk: Project Files Description</h2>
 
 <ul>
-  <li><b>Scripts/SpawnFood.cs</b> - Here how and where food will generate with what speed resides.</li>
-  <li><b>Scripts/MainMenuScript.cs</b> - Where all Main Menu UI design button allignment all resides.</li>
-  <li><b>Scripts/ScoreScript.cs</b> - This Maintains the Score Increment With Every Food is Eaten.</li>
-  <li><b>Scripts/SoundManager.cs</b> - This Maintains all Sound Element From welcoming in game to eating food to gameover.</li>
-  <li><b>Scripts/Snake.cs</b> - This Binds All Scripts and also Handle Movement of Snake and Growth rate of Snake.</li>
-  <li><b>Scripts/GameOverScript.cs</b> - This Contain GameOver Screen UI design and Score bar.</li>
+  <li><b>Scripts/Pacdot.cs</b> - Here Implemented The Positions of Pacdot and getting destroyed of pacdot with contact of pacman.</li>
+  <li><b>Scripts/PacmanMove.cs</b> - Here all Code of Pacman how it will move and on contact with ghost will kill and contact will destroy food resides.</li>
+  <li><b>Scripts/GhostMoves.cs</b> - It Contains the Predecided Movement Path of all ghosts different for each and there movement speed.</li>
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
  
  <h2 id="project-files-description"> ⏯️ How to Run Game</h2>
  <ul>
-  <li><b>STEP-1 </b> - To Download Source Code and Playable Build click [Download](https://drive.google.com/drive/folders/1Aeiwm-NYEDG-VxkZVJBNHitLlna0a2yJ?usp=sharing).</li>
-  <li><b>STEP-2 </b> - Extract the **Snake Game playable(.exe).zip** for Playable Content and **Snake Game Source Code.zip** to see Source Code Content.</li>
-  <li><b>STEP-3 </b> - Open Extracted Folder Than double Click on **Snake Game Self.exe** to play game.</li>
+  <li><b>STEP-1 </b> - To Download Source Code and Playable Build click [Download](https://drive.google.com/drive/folders/1rtoV7bDruZvq4FiP_SG6LGwlsATjVSff?usp=sharing).</li>
+  <li><b>STEP-2 </b> - Extract the **Pac-Man Build.zip** for Playable Content and **Pac-Man Source Code.zip** to see Source Code Content.</li>
+  <li><b>STEP-3 </b> - Open Extracted Folder Than double Click on **Pac-man 2D.exe** to play game.</li>
   <li><b>STEP-4 </b> - Enjoy the Game!.</li>
 </ul>
 
-<img src="Images/main menu.png" alt="Main-Menu" width="100%" height="600">
-<img src="Images/Game.png" alt="Main-Menu" width="100%" height="600">
-<img src="Images/GameOver.png" alt="Main-Menu" width="100%" height="600">
+<img src="images/Gameplay.png" alt="Main-Menu" width="100%" height="600">
