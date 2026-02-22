@@ -1,55 +1,90 @@
-<h1 align="Center"> Pac-Man Game </h1>
+# Pac-Man Game
 
-<h5 align="center"> Project Assignment 3 - Computer Game Development and Animation ,<a href="https://nitw.ac.in/"> NITW</a> (Winter 2021) </h5>
+A 2D Pac-Man game built with Unity Engine and C# -- featuring player-controlled movement, AI ghost pathfinding, and classic arcade gameplay mechanics.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Unity](https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
 
-<!-- ABOUT THE PROJECT -->
-<h2 id="about-the-project"> :pencil: About The Project</h2>
+> Project Assignment 3 -- Computer Game Development and Animation, [NIT Warangal](https://nitw.ac.in/) (Winter 2021)
 
-<p align="justify"> 
-  Pac-Man is an action maze chase game. the player controls the eponymous character through an enclosed maze. The objective of the game is to eat all of the dots placed in the maze while avoiding four colored ghosts — Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) — that pursue him. When Pac-Man eats all of the dots, the player Wins the Game. If Pac-Man makes contact with a ghost, he will loose the game.
-</p>
+## Overview
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+A faithful recreation of the classic Pac-Man arcade game built in Unity Engine. The player navigates Pac-Man through an enclosed maze, eating dots while avoiding four colored ghosts. The game implements smooth movement with raycasting-based collision detection, ghost AI with predefined patrol patterns, and score tracking.
 
-<!-- OVERVIEW -->
-<h2 id="overview"> :cloud: Overview</h2>
+<img src="images/Gameplay.png" alt="Gameplay" width="100%">
 
-<p align="justify"> 
-  In this project, the Pacman will Move inside the maze area, And it have to eat foods(dots) moving around. I implemented general Moving algorithm with keyboard keys and algo which keep track of score and also implemented algo for fixed Movement of ghosts to move around in maze.
-</p>
+## Gameplay
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+- **Objective**: Eat all dots placed in the maze
+- **Controls**: Arrow keys for directional movement
+- **Win Condition**: Collect every dot in the maze
+- **Lose Condition**: Contact with any ghost
 
-<!-- PROJECT FILES DESCRIPTION -->
-<h2 id="project-files-description"> 💻 Language and Tools Used</h2>
+### Ghost Characters
 
-<ul>
-  <li><b>C#</b> - For Coding Part and Libraries.</li>
-  <li><b>Visual Studio Code</b> - Text Editor For Running C# Codes.</li>
-  <li><b>Unity Engine</b> - For Handling Scripts with Runnable Environment.</li>
-</ul>
+| Ghost | Color | Behavior |
+|-------|-------|----------|
+| Blinky | Red | Aggressive chaser |
+| Pinky | Pink | Ambush positioning |
+| Inky | Cyan | Unpredictable movement |
+| Clyde | Orange | Random patrol pattern |
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+## Tech Stack
 
-<!-- PROJECT FILES DESCRIPTION -->
-<h2 id="project-files-description"> :floppy_disk: Project Files Description</h2>
+| Component | Technology |
+|-----------|-----------|
+| Game Engine | Unity Engine |
+| Language | C# (MonoBehaviour) |
+| Editor | Visual Studio Code |
+| Physics | Unity 2D Raycasting |
 
-<ul>
-  <li><b>Scripts/Pacdot.cs</b> - Here Implemented The Positions of Pacdot and getting destroyed of pacdot with contact of pacman.</li>
-  <li><b>Scripts/PacmanMove.cs</b> - Here all Code of Pacman how it will move and on contact with ghost will kill and contact will destroy food resides.</li>
-  <li><b>Scripts/GhostMoves.cs</b> - It Contains the Predecided Movement Path of all ghosts different for each and there movement speed.</li>
-</ul>
+## Project Structure
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
- 
- <h2 id="project-files-description"> ⏯️ How to Run Game</h2>
- <ul>
-  <li><b>STEP-1 </b> - To Download Source Code and Playable Build click [Download](https://drive.google.com/drive/folders/1rtoV7bDruZvq4FiP_SG6LGwlsATjVSff?usp=sharing).</li>
-  <li><b>STEP-2 </b> - Extract the **Pac-Man Build.zip** for Playable Content and **Pac-Man Source Code.zip** to see Source Code Content.</li>
-  <li><b>STEP-3 </b> - Open Extracted Folder Than double Click on **Pac-man 2D.exe** to play game.</li>
-  <li><b>STEP-4 </b> - Enjoy the Game!.</li>
-</ul>
+```
+PacMan-Game__UnityEngine/
+├── Scripts/
+│   ├── PacmanMove.cs       # Player movement, input handling, collision
+│   ├── GhostMove.cs        # Ghost AI patrol patterns and speed
+│   └── Pacdot.cs           # Dot positions, collection, and score
+├── images/
+│   └── Gameplay.png        # Gameplay screenshot
+└── README.md
+```
 
-<img src="images/Gameplay.png" alt="Main-Menu" width="100%" height="600">
+## Script Details
+
+### PacmanMove.cs
+- Smooth grid-based movement using `Vector2.MoveTowards()`
+- Keyboard input handling (arrow keys)
+- Raycasting for wall collision detection
+- Animation parameter updates for directional sprites
+- Movement validation before each step
+
+### GhostMove.cs
+- Predefined waypoint-based movement paths for each ghost
+- Individual movement speeds per ghost
+- Continuous patrol behavior with path cycling
+
+### Pacdot.cs
+- Dot position management on the grid
+- Collision-triggered destruction on Pac-Man contact
+- Score increment on collection
+
+## How to Play
+
+### Download and Play
+
+1. [Download from Google Drive](https://drive.google.com/drive/folders/1rtoV7bDruZvq4FiP_SG6LGwlsATjVSff?usp=sharing) (includes playable build + source code)
+2. Extract `Pac-Man Build.zip`
+3. Run `Pac-man 2D.exe`
+
+### Build from Source
+
+1. Clone this repository
+2. Open the project in Unity Editor (2021.x+)
+3. Open the main scene
+4. Press Play in the Unity Editor or build for your platform
+
+## License
+
+MIT
