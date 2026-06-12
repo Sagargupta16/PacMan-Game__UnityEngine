@@ -70,20 +70,9 @@ PacMan-Game__UnityEngine/
 - Collision-triggered destruction on Pac-Man contact
 - Score increment on collection
 
-## How to Play
+## Availability
 
-### Download and Play
-
-1. [Download from Google Drive](https://drive.google.com/drive/folders/1rtoV7bDruZvq4FiP_SG6LGwlsATjVSff?usp=sharing) (includes playable build + source code)
-2. Extract `Pac-Man Build.zip`
-3. Run `Pac-man 2D.exe`
-
-### Build from Source
-
-1. Clone this repository
-2. Open the project in Unity Editor (2021.x+)
-3. Open the main scene
-4. Press Play in the Unity Editor or build for your platform
+The playable Windows build (`Pac-Man Build.zip`, run via `Pac-man 2D.exe`) was previously distributed through a Google Drive folder that is no longer available. This repository contains the game's C# scripts and a gameplay screenshot only -- the full Unity project (scenes, assets, `ProjectSettings/`) is not included, so the game cannot currently be downloaded or built from this repo.
 
 ## License
 
