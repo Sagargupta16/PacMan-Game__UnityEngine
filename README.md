@@ -7,6 +7,8 @@ A 2D Pac-Man game built with Unity Engine and C# -- featuring player-controlled 
 
 > Project Assignment 3 -- Computer Game Development and Animation, [NIT Warangal](https://nitw.ac.in/) (Winter 2021)
 
+> Note: This is a sample/reference project -- it contains the game's C# scripts only and is not actively deployed.
+
 ## Overview
 
 A faithful recreation of the classic Pac-Man arcade game built in Unity Engine. The player navigates Pac-Man through an enclosed maze, eating dots while avoiding four colored ghosts. The game implements smooth movement with raycasting-based collision detection, ghost AI with predefined patrol patterns, and score tracking.
@@ -72,7 +74,7 @@ PacMan-Game__UnityEngine/
 
 ## Availability
 
-The playable Windows build (`Pac-Man Build.zip`, run via `Pac-man 2D.exe`) was previously distributed through a Google Drive folder that is no longer available. This repository contains the game's C# scripts and a gameplay screenshot only -- the full Unity project (scenes, assets, `ProjectSettings/`) is not included, so the game cannot currently be downloaded or built from this repo.
+This repository contains the game's C# scripts and a gameplay screenshot only -- the full Unity project (scenes, assets, `ProjectSettings/`) is not included, so the game cannot be built or played from this repo.
 
 ## License
 
